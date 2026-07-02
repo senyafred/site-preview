@@ -120,3 +120,11 @@ hr.rule{border:0;border-top:1px solid var(--line);margin:40px 0;}
 .contact-card .c-email{display:inline-block;margin-bottom:7px;}
 .contact-card .c-links{display:flex;gap:10px;justify-content:center;align-items:center;}
 .contact-card .c-links span{color:#c2cad1;}
+
+/* ---- fancy contact icon badges ---- */
+.socials{display:flex;gap:12px;justify-content:center;align-items:center;margin-top:8px;}
+.socials .social{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center;color:var(--ink-soft);transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease;}
+.socials .social:hover{background:var(--accent);border-color:var(--accent);color:#fff;transform:translateY(-3px);box-shadow:0 8px 18px rgba(58,110,165,.30);text-decoration:none;}
+.socials .social svg{width:19px;height:19px;fill:currentColor;display:block;}
+.contact-card .c-email{margin-top:12px;font-size:.9rem;color:var(--muted);}
+.contact-card .c-email:hover{color:var(--accent);}
