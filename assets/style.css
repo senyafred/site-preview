@@ -107,7 +107,7 @@ hr.rule{border:0;border-top:1px solid var(--line);margin:40px 0;}
 
 /* ---- decorative side background (metabolic-network motif) ---- */
 .bg-deco{position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background-image:url("assets/side.svg?v=8"),url("assets/side-right.svg?v=8");
+  background-image:url("side.svg?v=9"),url("side-right.svg?v=9");
   background-position:left top,right top;
   background-size:300px 100%,300px 100%;
   background-repeat:no-repeat,no-repeat;}
