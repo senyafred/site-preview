@@ -112,3 +112,11 @@ hr.rule{border:0;border-top:1px solid var(--line);margin:40px 0;}
   background-size:300px 100%,300px 100%;
   background-repeat:no-repeat,no-repeat;}
 @media (max-width:1200px){.bg-deco{display:none;}}
+
+/* ---- home: tagline + contact under photo ---- */
+.intro .left-col{display:flex;flex-direction:column;}
+.tagline{font-family:"Source Serif 4",serif;font-style:italic;text-align:center;color:var(--ink-soft);font-size:1.04rem;line-height:1.45;margin:16px 6px 0;}
+.contact-card{margin-top:14px;text-align:center;font-family:"Source Serif 4",serif;font-size:.96rem;}
+.contact-card .c-email{display:inline-block;margin-bottom:7px;}
+.contact-card .c-links{display:flex;gap:10px;justify-content:center;align-items:center;}
+.contact-card .c-links span{color:#c2cad1;}
