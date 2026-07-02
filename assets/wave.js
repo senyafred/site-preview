@@ -66,7 +66,8 @@
       inner.style.opacity = (1 - p).toFixed(3);
       inner.style.transform = 'translateY(' + (-p * 28).toFixed(1) + 'px)';
     }
-    header.classList.toggle('scrolled', y > h * 0.5);
+    header.style.setProperty('--dark', p.toFixed(3));
+    header.classList.toggle('scrolled', p > 0.42);
     ticking = false;
   }
   function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(apply); } }
