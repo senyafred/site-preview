@@ -91,3 +91,14 @@ hr.rule{border:0;border-top:1px solid var(--line);margin:40px 0;}
   .nav-links{gap:12px;font-size:.9rem;}
   .intro .hexbg{display:none;}
 }
+
+/* ---- scroll-driven header darkening + banner fade ---- */
+.site-header{transition:background-color .38s ease, border-color .38s ease, box-shadow .38s ease;}
+.site-header .brand,.site-header .brand .mono,.site-header .nav-links a{transition:color .38s ease, border-color .38s ease;}
+.site-header.scrolled{background:rgba(18,20,23,0.96);backdrop-filter:saturate(160%) blur(8px);border-bottom-color:rgba(255,255,255,0.08);}
+.site-header.scrolled .brand{color:#fff;}
+.site-header.scrolled .brand .mono{border-color:rgba(255,255,255,0.78);color:#fff;}
+.site-header.scrolled .nav-links a{color:#cfd3d8;}
+.site-header.scrolled .nav-links a:hover{color:#fff;}
+.site-header.scrolled .nav-links a.active{color:#fff;border-bottom-color:var(--accent);}
+.banner .banner-inner{will-change:opacity, transform;}
