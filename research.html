@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=17">
+<link rel="stylesheet" href="assets/style.css?v=18">
 </head>
 <body>
 <div class="bg-deco" aria-hidden="true"></div>
@@ -26,23 +26,94 @@
   </div>
 </section>
 <main class="wrap">
-  <p class="lead">My research develops and analyzes mathematical models of biological and physical systems, spanning genome-scale metabolism, disease transmission, and complex collective behavior.</p>
-  <hr class="rule">
+  <p class="lead">I develop and analyze mathematical models of biological and physical systems &mdash; turning differential equations, optimization, and data into insight about how living systems behave in space and time. My work spans genome-scale metabolism, disease transmission, health analytics, and mathematical neuroscience.</p>
 
-  <h3>Spatial metabolic modeling &mdash; FBA meets reaction&ndash;diffusion</h3>
-  <p>I developed an equation-based framework that integrates <strong>flux balance analysis (FBA)</strong> with <strong>reaction&ndash;diffusion PDEs</strong> to capture how microbial communities grow and interact across space and time. A central application studies oxygen-driven <em>reductive stress</em> in <em>Pseudomonas aeruginosa</em> biofilms, quantifying stress as a metabolic flux. This work is the basis of my first-author preprint (<em>Senya et al.</em>, 2026).</p>
-
-  <h3>Disease transmission modeling</h3>
-  <p>I build ODE and PDE models of infectious-disease dynamics &mdash; including reaction&ndash;diffusion and chemotaxis models of <strong>schistosomiasis</strong> transmission with 2D spatial simulation &mdash; and compartmental epidemic models such as SVEIR with vaccination.</p>
-
-  <h3>Predictive modeling for health</h3>
-  <p>Working with virtual-care data, I applied predictive modeling to classify <strong>chronic kidney disease</strong> patients by their probability of stage degeneration from longitudinal eGFR trajectories. This co-authored work was presented at the SIAM Mathematical Problems in Industry (MPI) workshop.</p>
-
-  <h3>Bayesian inference &amp; complex systems</h3>
-  <p>I use <strong>Bayesian hierarchical modeling</strong> and MCMC to quantify uncertainty in experimental data (including pupillometry / psycholinguistics), and I study complex systems through agent-based models such as the Vicsek model of collective motion and stochastic cellular automata.</p>
+  <div class="linkbar">
+    <a class="linkchip" href="https://scholar.google.com/citations?user=5L22TGAAAAAJ&hl=en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg> Google Scholar</a>
+    <a class="linkchip" href="https://github.com/senyafred" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.1-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 5 18 5c.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.3v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg> GitHub</a>
+    <a class="linkchip" href="publications.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6zm8 1.5V8h4.5z"/></svg> Publications</a>
+  </div>
 
   <hr class="rule">
-  <p>Code for much of this work is on <a href="https://github.com/senyafred">GitHub</a> &mdash; see <a href="projects.html">Projects</a>.</p>
+  <p class="section-kicker">Explore</p>
+  <h2 class="section-title" style="margin-bottom:16px">Research Areas</h2>
+
+  <div class="areas">
+    <details class="area" open>
+      <summary><span class="area-t">Spatial Metabolic Modeling</span><span class="area-k">FBA &times; reaction&ndash;diffusion</span><span class="chev" aria-hidden="true"></span></summary>
+      <div class="area-b">
+        <p>I built an equation-based framework that couples genome-scale <strong>flux balance analysis</strong> with <strong>reaction&ndash;diffusion PDEs</strong> to simulate how microbial communities grow and interact across space and time. A central application quantifies oxygen-driven <em>reductive stress</em> in <em>Pseudomonas aeruginosa</em> biofilms as a metabolic flux. This is the basis of my first-author preprint.</p>
+        <div class="area-links">
+          <a class="rlink" href="https://scholar.google.com/citations?user=5L22TGAAAAAJ&hl=en" target="_blank" rel="noopener">Preprint &rarr;</a>
+          <a class="rlink" href="https://github.com/senyafred/flux-balance-analysis" target="_blank" rel="noopener">Code &rarr;</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="area">
+      <summary><span class="area-t">Disease Transmission Modeling</span><span class="area-k">ODE &amp; PDE epidemics</span><span class="chev" aria-hidden="true"></span></summary>
+      <div class="area-b">
+        <p>I build ODE and PDE models of infectious-disease dynamics &mdash; including reaction&ndash;diffusion and chemotaxis models of <strong>schistosomiasis</strong> transmission with 2D spatial simulation, and compartmental epidemic models such as SVEIR with vaccination.</p>
+        <div class="area-links">
+          <a class="rlink" href="https://github.com/senyafred/schistosomiasis-modeling" target="_blank" rel="noopener">Schistosomiasis code &rarr;</a>
+          <a class="rlink" href="https://github.com/senyafred/complex-systems-modeling" target="_blank" rel="noopener">Epidemic models &rarr;</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="area">
+      <summary><span class="area-t">Predictive Modeling for Health</span><span class="area-k">Chronic kidney disease</span><span class="chev" aria-hidden="true"></span></summary>
+      <div class="area-b">
+        <p>Working with virtual-care data, I applied predictive modeling to classify <strong>chronic kidney disease</strong> patients by their probability of stage degeneration from longitudinal eGFR trajectories. This co-authored work (Ashenafi et al.) was presented at the SIAM Mathematical Problems in Industry workshop.</p>
+        <div class="area-links">
+          <a class="rlink" href="https://scholar.google.com/citations?user=5L22TGAAAAAJ&hl=en" target="_blank" rel="noopener">Paper &rarr;</a>
+          <a class="rlink" href="https://github.com/senyafred/egfr-ckd-analysis" target="_blank" rel="noopener">Code &rarr;</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="area">
+      <summary><span class="area-t">Mathematical Neuroscience</span><span class="area-k">Retinal modeling</span><span class="chev" aria-hidden="true"></span></summary>
+      <div class="area-b">
+        <p>As a co-author, I contributed to modeling the <strong>spatial dependence of rods and cones in the retina</strong> &mdash; using mathematical models to study the organization of photoreceptors and what it implies for vision.</p>
+        <div class="area-links">
+          <a class="rlink" href="https://scholar.google.com/citations?user=5L22TGAAAAAJ&hl=en" target="_blank" rel="noopener">Paper &rarr;</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="area">
+      <summary><span class="area-t">Bayesian Inference &amp; Complex Systems</span><span class="area-k">Uncertainty &amp; collective behavior</span><span class="chev" aria-hidden="true"></span></summary>
+      <div class="area-b">
+        <p>I use <strong>Bayesian hierarchical modeling</strong> and MCMC to quantify uncertainty in experimental data (including pupillometry / psycholinguistics), and I study complex systems through agent-based models such as the Vicsek model of collective motion and stochastic cellular automata.</p>
+        <div class="area-links">
+          <a class="rlink" href="https://github.com/senyafred/bayesian-statistics" target="_blank" rel="noopener">Bayesian code &rarr;</a>
+          <a class="rlink" href="https://github.com/senyafred/complex-systems-modeling" target="_blank" rel="noopener">Complex systems code &rarr;</a>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <hr class="rule">
+  <p class="section-kicker">Output</p>
+  <h2 class="section-title">Selected Publications</h2>
+
+  <div class="pub">
+    <div class="venue">Preprint &middot; bioRxiv &middot; 2026</div>
+    <h3><a href="https://scholar.google.com/citations?user=5L22TGAAAAAJ&hl=en" target="_blank" rel="noopener">Equation-Based Integration of Flux Balance Analysis with Diffusion for Spatio-Temporal Simulation of Microbial Communities</a></h3>
+    <p class="authors">F. Senya, R. Siegel, I. Dukovski, D. Bernstein</p>
+  </div>
+  <div class="pub">
+    <div class="venue">2024</div>
+    <h3><a href="https://scholar.google.com/citations?user=5L22TGAAAAAJ&hl=en" target="_blank" rel="noopener">Modeling Spatial Dependence of Rods and Cones in the Retina</a></h3>
+    <p class="authors">N. Chicoine, C. Hammond, A. Iatcenko, L. Schneegans, F. Senya, L. Trinh, et al.</p>
+  </div>
+  <div class="pub">
+    <div class="venue">SIAM MPI</div>
+    <h3><a href="https://scholar.google.com/citations?user=5L22TGAAAAAJ&hl=en" target="_blank" rel="noopener">Analyzing the Influence of Virtual Care Management on Patient Health Outcomes and Risk-Stratifying Chronic Kidney Disease Patients for Stage Degeneration</a></h3>
+    <p class="authors">Y. Ashenafi, D. Auddya, S. Chakraborty, Z. Dana, M. S. Ghumman, D. Lopez, et al. (incl. F. Senya)</p>
+  </div>
+  <p style="margin-top:18px"><a class="btn" href="https://scholar.google.com/citations?user=5L22TGAAAAAJ&hl=en" target="_blank" rel="noopener">Full list on Google Scholar</a></p>
 </main>
 <footer class="site-footer">
   <div class="footer-inner">
@@ -51,8 +122,9 @@
       <a href="mailto:fsenya@uvm.edu">Email</a>
       <a href="https://github.com/senyafred">GitHub</a>
       <a href="https://www.linkedin.com/in/frederick-senya/">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=5L22TGAAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
     </div>
   </div>
 </footer>
-<script src="assets/wave.js?v=17"></script>
+<script src="assets/wave.js?v=18"></script>
 </body></html>

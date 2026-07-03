@@ -160,3 +160,28 @@ ul.plain li{margin:0 0 6px;}
 /* ---- teaching hero smaller + video element ---- */
 .figure.hero-fig{max-width:700px;margin-left:auto;margin-right:auto;}
 video.videoframe{width:100%;max-width:600px;margin-left:auto;margin-right:auto;display:block;background:#000;height:auto;}
+
+/* ---- Research page: link bar + interactive research areas ---- */
+.linkbar{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.linkchip{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:22px;padding:8px 15px;font-family:"Source Serif 4",serif;font-size:.92rem;color:var(--ink-soft);background:#fff;transition:all .16s ease;}
+.linkchip svg{width:16px;height:16px;fill:currentColor;}
+.linkchip:hover{border-color:var(--accent);color:var(--accent-dark);box-shadow:0 6px 16px rgba(58,110,165,.16);text-decoration:none;transform:translateY(-1px);}
+.areas{border-top:1px solid var(--line);}
+.area{border-bottom:1px solid var(--line);}
+.area>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:18px 34px 18px 4px;position:relative;transition:background .15s ease;}
+.area>summary::-webkit-details-marker{display:none;}
+.area>summary:hover{background:#fafbfc;}
+.area .area-t{font-family:"Playfair Display",serif;font-weight:600;font-size:1.22rem;color:var(--ink);}
+.area>summary:hover .area-t{color:var(--accent-dark);}
+.area .area-k{color:var(--muted);font-size:.9rem;font-family:"Source Serif 4",serif;margin-left:auto;}
+.area .chev{position:absolute;right:8px;top:50%;width:9px;height:9px;margin-top:-6px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(-45deg);transition:transform .2s ease;}
+.area[open] .chev{transform:rotate(45deg);}
+.area[open]>summary .area-t{color:var(--accent-dark);}
+.area .area-b{padding:0 4px 22px;}
+.area .area-b p{margin:0 0 14px;color:var(--ink-soft);}
+.area-links{display:flex;flex-wrap:wrap;gap:10px;}
+.rlink{font-family:"Source Serif 4",serif;font-size:.86rem;color:var(--accent-dark);background:rgba(58,110,165,.08);border:1px solid rgba(58,110,165,.18);padding:5px 12px;border-radius:20px;transition:background .15s ease,color .15s ease;}
+.rlink:hover{background:var(--accent);color:#fff;text-decoration:none;}
+.pub h3 a{color:var(--ink);}
+.pub h3 a:hover{color:var(--accent-dark);}
+@media (max-width:640px){.area .area-k{display:none;}}
