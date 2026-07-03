@@ -203,3 +203,12 @@ video.videoframe{width:100%;max-width:600px;margin-left:auto;margin-right:auto;d
 
 /* ---- home headline: matching accent, more visible ---- */
 .banner .subtitle.home-sub{color:var(--accent-dark);font-weight:500;}
+
+/* ---- home: broad interests as pills + fun fact ---- */
+.interests-lead{margin:22px 0 10px;font-weight:600;color:var(--ink);font-size:1.02rem;}
+.interest-list{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 4px;}
+.interest{display:inline-flex;align-items:center;gap:9px;font-family:"Source Serif 4",serif;font-size:.94rem;color:var(--accent-dark);background:rgba(58,110,165,.08);border:1px solid rgba(58,110,165,.20);padding:8px 14px;border-radius:22px;transition:background .16s ease,color .16s ease,transform .16s ease,box-shadow .16s ease;}
+.interest::before{content:"";width:7px;height:7px;background:var(--accent);border-radius:1px;transform:rotate(45deg);flex:none;transition:background .16s ease;}
+.interest:hover{background:var(--accent);color:#fff;transform:translateY(-2px);box-shadow:0 8px 18px rgba(58,110,165,.24);}
+.interest:hover::before{background:#fff;}
+.funfact{background:#f6f8fa;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:13px 18px;color:var(--ink-soft);}
