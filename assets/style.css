@@ -200,3 +200,6 @@ video.videoframe{width:100%;max-width:600px;margin-left:auto;margin-right:auto;d
 .news-box::-webkit-scrollbar-thumb:hover{background:#b9c1c9;}
 .news-box{scrollbar-width:thin;scrollbar-color:#d3d9df transparent;}
 @media (max-width:640px){.news-item{grid-template-columns:1fr;gap:4px;}}
+
+/* ---- home headline: matching accent, more visible ---- */
+.banner .subtitle.home-sub{color:var(--accent-dark);font-weight:500;}
