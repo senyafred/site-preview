@@ -159,4 +159,4 @@ ul.plain li{margin:0 0 6px;}
 
 /* ---- teaching hero smaller + video element ---- */
 .figure.hero-fig{max-width:700px;margin-left:auto;margin-right:auto;}
-video.videoframe{width:100%;display:block;background:#000;height:auto;}
+video.videoframe{width:100%;max-width:600px;margin-left:auto;margin-right:auto;display:block;background:#000;height:auto;}
